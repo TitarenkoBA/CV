@@ -1,3 +1,4 @@
+
 let elems = document.getElementsByClassName("myBar");
     for (elem of elems) {
         let width = parseInt(elem.textContent);
