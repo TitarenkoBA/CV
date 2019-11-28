@@ -40,7 +40,7 @@ var myChart = new Chart(ctx, {
           label: "Soft skills",
           fill: true,
           backgroundColor: "rgba(179,181,198,0.2)",
-          borderColor: "rgba(179,181,198,1)",
+          borderColor: "rgba(97, 97, 97, 1)",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(179,181,198,1)",
           data: [60,99,90,80,85,95,70]
@@ -48,7 +48,7 @@ var myChart = new Chart(ctx, {
           label: "Hard skills",
           fill: true,
           backgroundColor: "rgba(255,99,132,0.2)",
-          borderColor: "rgba(255,99,132,1)",
+          borderColor: "rgba(255, 87, 34, 1)",
           pointBorderColor: "#fff",
           pointBackgroundColor: "rgba(255,99,132,1)",
           pointBorderColor: "#fff",
