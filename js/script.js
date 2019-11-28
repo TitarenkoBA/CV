@@ -9,14 +9,57 @@ let spans = document.querySelectorAll(".myBar span");
     for (span of spans) {
         span.style.opacity = 1;   
     }
-    
-let img = document.querySelector('img');
-    function change_photo() {
-        let count = img.src.charAt(img.src.length - 5);
-        count++;
-        img.src = `img/${count}.JPG`;
-        if (count > 6) {
-            img.src = `img/1.JPG`;
-        } 
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ["English / HTML", "Russian / CSS", "Responsibility, perseverance, independence, organization / Javascript", "Organizational skills, leadership skills / jQuery", "Politeness, competent writing, correct speech / Vue.js", 'Striving to acquire new knowledge and practical skills / Git', "Creativity, originality / PHP"],
+      datasets: [
+        {
+          label: "Soft skills",
+          fill: true,
+          backgroundColor: "rgba(179,181,198,0.2)",
+          borderColor: "rgba(179,181,198,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(179,181,198,1)",
+          data: [60,99,90,80,85,95,70]
+        }, {
+          label: "Hard skills",
+          fill: true,
+          backgroundColor: "rgba(255,99,132,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(255,99,132,1)",
+          pointBorderColor: "#fff",
+          data: [90,90,80,60,40,40,15]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Skills diagram'
+      }
     }
-    
+});
