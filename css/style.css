@@ -25,4 +25,5 @@ img {
 
 .inset-shadow {
 	box-shadow: inset 4px 4px 4px rgba(50, 50, 50, 0.5);
+	-webkit-box-shadow: inset 4px 4px 4px rgba(50, 50, 50, 0.5);
 }
