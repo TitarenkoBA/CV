@@ -15,9 +15,19 @@
 <body class="w3-dark-grey">
 
   <header class="w3-container w3-deep-orange w3-center w3-margin-bottom w3-card">
-    <p><a href="https://github.com/TitarenkoBA" target="_blank" class="w3-hover-opacity">Find me on github <i
-          class="fa fa-github"></i></a></p>
-    <i id="theme-toggle" class="fa fa-toggle-on w3-display-topright" aria-hidden="true"></i>
+    <p><a href="https://github.com/TitarenkoBA" target="_blank" class="w3-hover-opacity" data-i18n="findMeOnGithub">Find
+        me on github <i class="fa fa-github"></i></a></p>
+    <span class="w3-tooltip w3-display-topright">
+      <span class="w3-text w3-tiny w3-animate-opacity w3-round" style="position:absolute;top:10px;right:50px;"
+        data-i18n="language">Change language</span>
+      <i class="fa fa-toggle-on" aria-hidden="true" id="lang-switcher" data-lang="en"></i>
+    </span>
+    <span class="w3-tooltip w3-display-topright">
+      <span class="w3-text w3-tiny w3-animate-opacity w3-round" style="position:absolute;top:10px;right:50px;"
+        data-i18n="theme">Change theme</span>
+      <i id="theme-toggle" class="fa fa-toggle-on w3-display-topright" aria-hidden="true"></i>
+    </span>
+
   </header>
 
   <!-- Page Container -->
@@ -53,104 +63,107 @@
             </div>
 
             <div class="w3-display-bottomleft w3-container w3-text-white w3-black w3-opacity" style="width:100%">
-              <h2>Boris Titarenko</h2>
+              <h2><span data-i18n="name">Boris Titarenko</span></h2>
             </div>
           </div>
           <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Front End Developer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>Syktyvkar, Russia</p>
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><span
+                data-i18n="frontEndDeveloper">Front End Developer</span></p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><span
+                data-i18n="location">Syktyvkar, Russia</span></p>
             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a
                 href="mailto:TitarenkoBorisAndreevich@ya.ru" target="_blank">TitarenkoBorisAndreevich@ya.ru</a></p>
             <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a href="tel:+79042391111"
                 target="_blank">+79042391111</a></p>
             <hr class="w3-card">
 
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-deep-orange"></i>Skills</b>
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-deep-orange"></i><span
+                  data-i18n="skills">Skills</span></b>
             </p>
-            <p>HTML</p>
+            <p data-i18n="html">HTML</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>90%</span>
               </div>
             </div>
-            <p>CSS</p>
+            <p data-i18n="css">CSS</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>90%</span>
               </div>
             </div>
-            <p>Examples:
+            <p data-i18n="examples">Examples:
               <a href="https://titarenkoba.github.io/html5-css3.git-project_2/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/test-task-2/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/html5-css3.git-project_4/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
             </p>
             <hr class="w3-card">
-            <p>JavaScript</p>
+            <p data-i18n="javascript">JavaScript</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>80%</span>
               </div>
             </div>
-            <p>jQuery</p>
+            <p data-i18n="jquery">jQuery</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>60%</span>
               </div>
             </div>
-            <p>Examples:
+            <p data-i18n="examples">Examples:
               <a href="https://titarenkoba.github.io/JavaScript_level_1_lesson_8/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/AudioPleer/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/about_me_test/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
             </p>
             <hr class="w3-card">
-            <p>Vue.js, Vue Router, Vuex</p>
+            <p data-i18n="vue">Vue.js, Vue Router, Vuex</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>55%</span>
               </div>
             </div>
-            <p>Examples:
+            <p data-i18n="examples">Examples:
               <a href="https://titarenkoba.github.io/git-handbook/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/JavaScript_level_2_lesson_6/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/blog_preview/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/notes_preview/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/PhoneBook_preview/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
               <a href="https://titarenkoba.github.io/chat_preview/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
             </p>
             <hr class="w3-card">
-            <p>React.js, React Router, Redux</p>
+            <p data-i18n="react">React.js, React Router, Redux</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>60%</span>
               </div>
             </div>
-            <p>Examples:
+            <p data-i18n="examples">Examples:
               <a href="https://react-quiz-ccba5.web.app/" target="_blank"
-                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+                class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="click">Click</a>
             </p>
             <hr class="w3-card">
-            <p>Git</p>
+            <p data-i18n="git">Git</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>40%</span>
               </div>
             </div>
-            <p>TypeScript</p>
+            <p data-i18n="typescript">TypeScript</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>20%</span>
               </div>
             </div>
-            <p>PHP</p>
+            <p data-i18n="php">PHP</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>15%</span>
               </div>
             </div>
-            <p>Web Design</p>
+            <p data-i18n="webDesign">Web Design</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>70%</span>
               </div>
@@ -158,7 +171,7 @@
             <br>
 
             <button onclick="document.getElementById('id01').style.display='block'"
-              class="w3-button w3-block w3-margin-bottom w3-deep-orange w3-card">
+              class="w3-button w3-block w3-margin-bottom w3-deep-orange w3-card" data-i18n="openStats">
               Open stats
             </button>
 
@@ -176,25 +189,27 @@
 
             <hr class="w3-card">
             <p class="w3-large w3-text-theme"><b><i
-                  class="fa fa-globe fa-fw w3-margin-right w3-text-deep-orange"></i>Languages</b></p>
-            <p>English</p>
+                  class="fa fa-globe fa-fw w3-margin-right w3-text-deep-orange"></i><span
+                  data-i18n="languages">Languages</span></b></p>
+            <p data-i18n="english">English</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-round-xlarge w3-center w3-deep-orange myBar" style="width:0%"><span>60%</span></div>
             </div>
-            <p>Russian</p>
+            <p data-i18n="russian">Russian</p>
             <div class="w3-grey w3-round-xlarge w3-small">
               <div class="w3-round-xlarge w3-center w3-deep-orange myBar" style="width:0%"><span>99%</span></div>
             </div>
             <br>
             <hr class="w3-card">
             <p class="w3-large w3-text-theme"><b><i
-                  class="fa fa-user fa-fw w3-margin-right w3-text-deep-orange"></i>Personal quality</b></p>
+                  class="fa fa-user fa-fw w3-margin-right w3-text-deep-orange"></i><span
+                  data-i18n="personalQuality">Personal quality</span></b></p>
             <ul class="w3-ul w3-hoverable">
-              <li>Responsibility, perseverance, independence, organization;</li>
-              <li>Organizational skills, leadership skills;</li>
-              <li>Politeness, competent writing, correct speech;</li>
-              <li>Striving to acquire new knowledge and practical skills;</li>
-              <li>Creativity, originality.</li>
+              <li data-i18n="responsibility">Responsibility, perseverance, independence, organization;</li>
+              <li data-i18n="orgSkills">Organizational skills, leadership skills;</li>
+              <li data-i18n="politeness">Politeness, competent writing, correct speech;</li>
+              <li data-i18n="striving">Striving to acquire new knowledge and practical skills;</li>
+              <li data-i18n="creativity">Creativity, originality.</li>
             </ul>
             <br>
           </div>
@@ -208,11 +223,13 @@
 
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Work Experience</h2>
+              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i><span
+              data-i18n="workExperience">Work Experience</span></h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Senior web developer / Makves Group / www.makves.ru</b></h5>
+            <h5 class="w3-opacity"><b data-i18n="seniorWebDev">Senior web developer / Makves Group / www.makves.ru</b>
+            </h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2021 - Jul 2025</h6>
-            <p>
+            <p data-i18n="seniorWebDevDesc">
               Software development, web resource development, software interface development, web resource optimization
               and layout,
               ensuring cross-platform, cross-browser, and responsive behavior of web resource elements, checking the
@@ -222,53 +239,59 @@
               monitoring the work of web programmers and junior web programmers.
             </p>
             <a href="pdf\recommendations.pdf" target="_blank"
-              class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Recommendations</a>
+              class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small"
+              data-i18n="recommendations">Recommendations</a>
             <a href="video\preview.mp4" target="_blank"
-              class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Preview</a>
+              class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="preview">Preview</a>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Designer-coder / Strategy Partners / www.strategy.ru</b></h5>
+            <h5 class="w3-opacity"><b data-i18n="designerCoder">Designer-coder / Strategy Partners / www.strategy.ru</b>
+            </h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - December 2020
             </h6>
-            <p>Design and layout of web documents and web applications. Creation of documentation on internal products
+            <p data-i18n="designerCoderDesc">Design and layout of web documents and web applications. Creation of
+              documentation on internal products
               of the company for personnel training. Development of interactive documentation on its basis. Create
               single-page applications. Create templates of interactive documents for implementation in the work of
               employees. Code review.</p>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Assessor of first line user support / Yandex / www.yandex.ru</b></h5>
+            <h5 class="w3-opacity"><b data-i18n="assessor">Assessor of first line user support / Yandex /
+                www.yandex.ru</b></h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2018 - May 2019</h6>
-            <p>Working with user requests.</p>
+            <p data-i18n="assessorDesc">Working with user requests.</p>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Web Designer / freelance</b></h5>
+            <h5 class="w3-opacity"><b data-i18n="webDesigner">Web Designer / freelance</b></h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Jan 2018</h6>
-            <p>Design and layout of the sites in Adobe Photoshop and Adobe Muse. </p>
+            <p data-i18n="webDesignerDesc">Design and layout of the sites in Adobe Photoshop and Adobe Muse. </p>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Specialist in organizational and mass work / Public organization of the trade
+            <h5 class="w3-opacity"><b data-i18n="specialist">Specialist in organizational and mass work / Public
+                organization of the trade
                 Union of workers of housing and communal services of the Republic of Komi</b></h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2011 - Jul 2019</h6>
             <p>
             <ul>
-              <li>involvement in the Union</li>
-              <li>motivation of trade Union membership</li>
-              <li>intra-Union work</li>
-              <li>improvement of the organizational structure of the professional organization</li>
-              <li>preparation and holding of meetings, conferences</li>
-              <li>preparation and holding of mass actions</li>
-              <li>work on the formation of assets, reserves</li>
-              <li>training of professional shots</li>
-              <li>information work</li>
-              <li>record keeping</li>
-              <li>provision of canz office. hoz. accessories</li>
-              <li>conducting telephone conversations and business correspondence</li>
-              <li>receiving sending correspondence</li>
-              <li>work with the archive. </li>
+              <li data-i18n="specialistDesc1">involvement in the Union</li>
+              <li data-i18n="specialistDesc2">motivation of trade Union membership</li>
+              <li data-i18n="specialistDesc3">intra-Union work</li>
+              <li data-i18n="specialistDesc4">improvement of the organizational structure of the professional
+                organization</li>
+              <li data-i18n="specialistDesc5">preparation and holding of meetings, conferences</li>
+              <li data-i18n="specialistDesc6">preparation and holding of mass actions</li>
+              <li data-i18n="specialistDesc7">work on the formation of assets, reserves</li>
+              <li data-i18n="specialistDesc8">training of professional shots</li>
+              <li data-i18n="specialistDesc9">information work</li>
+              <li data-i18n="specialistDesc10">record keeping</li>
+              <li data-i18n="specialistDesc11">provision of canz office. hoz. accessories</li>
+              <li data-i18n="specialistDesc12">conducting telephone conversations and business correspondence</li>
+              <li data-i18n="specialistDesc13">receiving sending correspondence</li>
+              <li data-i18n="specialistDesc14">work with the archive. </li>
             </ul>
             </p>
             <br>
@@ -277,43 +300,46 @@
 
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Education</h2>
+              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i><span
+              data-i18n="education">Education</span></h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Geekbrains.ru</b></h5>
+            <h5 class="w3-opacity"><b data-i18n="geekbrains">Geekbrains.ru</b></h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
-            <p>Front End Development</p>
+            <p data-i18n="frontEndDev">Front End Development</p>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Syktyvkar Forest Institute (branch) of the Federal State Budgetary Educational
+            <h5 class="w3-opacity"><b data-i18n="institute">Syktyvkar Forest Institute (branch) of the Federal State
+                Budgetary Educational
                 Institution of Higher Education «St. Petersburg State Forest Engineering University named after S. M.
                 Kirov»</b></h5>
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2010</h6>
-            <p>Engineer</p>
+            <p data-i18n="engineer">Engineer</p>
           </div>
           <br>
         </div>
 
         <div class="w3-container w3-card w3-white">
           <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Certification</h2>
+              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i><span
+              data-i18n="certification">Certification</span></h2>
           <div class="w3-container">
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
             <ul class="w3-ul w3-hoverable">
               <a target="_blank" href="https://geekbrains.ru/certificates/564865.en">
-                <li>HTML5 and CSS3. Advanced Web Development Tools</li>
+                <li data-i18n="html5css3">HTML5 and CSS3. Advanced Web Development Tools</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/575762.en">
-                <li>JavaScript. Level 1. Dynamic Web Applications</li>
+                <li data-i18n="jsLevel1">JavaScript. Level 1. Dynamic Web Applications</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/597384.en">
-                <li>JavaScript. Level 2. Advanced Course</li>
+                <li data-i18n="jsLevel2">JavaScript. Level 2. Advanced Course</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/561332.en">
-                <li>Git. Easy Start. Version Control System</li>
+                <li data-i18n="gitEasy">Git. Easy Start. Version Control System</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/685076.en">
-                <li>GeekBrains Internship. Team Development Skills</li>
+                <li data-i18n="internship">GeekBrains Internship. Team Development Skills</li>
               </a>
             </ul>
             <hr class="w3-card">
@@ -322,16 +348,16 @@
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
             <ul class="w3-ul w3-hoverable">
               <a target="_blank" href="https://www.sololearn.com/Certificate/1082-782759/pdf/">
-                <li>JQuery Tutorial course</li>
+                <li data-i18n="jqCourse">JQuery Tutorial course</li>
               </a>
               <a target="_blank" href="https://www.sololearn.com/Certificate/1024-782759/pdf/">
-                <li>JavaScript Tutorial course</li>
+                <li data-i18n="jsCourse">JavaScript Tutorial course</li>
               </a>
               <a target="_blank" href="https://www.sololearn.com/Certificate/1060-782759/pdf/">
-                <li>SQL Fundamentals</li>
+                <li data-i18n="sqlFund">SQL Fundamentals</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/432368.en">
-                <li>English language. Upper-intermediate</li>
+                <li data-i18n="englishUpper">English language. Upper-intermediate</li>
               </a>
             </ul>
             <hr class="w3-card">
@@ -340,16 +366,16 @@
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
             <ul class="w3-ul w3-hoverable">
               <a target="_blank" href="https://geekbrains.ru/certificates/169306.en">
-                <li>Introduction to Web Design. Online Course</li>
+                <li data-i18n="introWeb">Introduction to Web Design. Online Course</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/186756.en">
-                <li>Intensive Web Design. Development of Landing page</li>
+                <li data-i18n="intensiveWeb">Intensive Web Design. Development of Landing page</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/164697.en">
-                <li>Web development intensive. Personal site creation</li>
+                <li data-i18n="webIntensive">Web development intensive. Personal site creation</li>
               </a>
               <a target="_blank" href="https://geekbrains.ru/certificates/614283.en">
-                <li>Web development. Quick start. Free video course on php</li>
+                <li data-i18n="webQuick">Web development. Quick start. Free video course on php</li>
               </a>
             </ul>
             <hr class="w3-card">
@@ -358,10 +384,10 @@
             <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
             <ul class="w3-ul w3-hoverable">
               <a target="_blank" href="https://www.sololearn.com/Certificate/1023-782759/pdf/">
-                <li>CSS Fundamentals course</li>
+                <li data-i18n="cssFund">CSS Fundamentals course</li>
               </a>
               <a target="_blank" href="https://www.sololearn.com/Certificate/1014-782759/pdf/">
-                <li>HTML Fundamentals course</li>
+                <li data-i18n="htmlFund">HTML Fundamentals course</li>
               </a>
             </ul>
             <br>
@@ -378,11 +404,12 @@
   </div>
 
   <footer class="w3-container w3-deep-orange w3-center w3-margin-top w3-card">
-    <p><a href="https://github.com/TitarenkoBA" target="_blank" class="w3-hover-opacity">Find me on github <i
-          class="fa fa-github w3-hover-opacity"></i></a></p>
+    <p><a href="https://github.com/TitarenkoBA" target="_blank" class="w3-hover-opacity" data-i18n="findMeOnGithub">Find
+        me on github <i class="fa fa-github w3-hover-opacity"></i></a></p>
   </footer>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script type="text/javascript" src="js/translations.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {

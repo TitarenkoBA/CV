@@ -103,3 +103,52 @@ function themeToggle() {
     btn.classList.toggle("fa-toggle-on");
   });
 }
+
+// Language switching logic
+const LANGUAGES = {
+  en: "en",
+  ru: "ru"
+}
+
+function setLanguage(lang) {
+  localStorage.setItem('lang', lang);
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (window.translations[lang][key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = window.translations[lang][key];
+      } else {
+        el.childNodes[0].nodeValue = window.translations[lang][key] + ' ';
+      }
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ... existing code ...
+  // Language switcher
+  const langSwitcher = document.getElementById('lang-switcher');
+  if (langSwitcher) {
+    // Set initial icon and data-lang
+    const savedLang = localStorage.getItem('lang') || 'en';
+    langSwitcher.dataset.lang = savedLang;
+    if (savedLang === 'ru') {
+      langSwitcher.classList.remove('fa-toggle-on');
+      langSwitcher.classList.add('fa-toggle-off');
+    } else {
+      langSwitcher.classList.remove('fa-toggle-off');
+      langSwitcher.classList.add('fa-toggle-on');
+    }
+    langSwitcher.addEventListener('click', function () {
+      const currentLang = langSwitcher.dataset.lang || 'en';
+      const newLang = currentLang === 'en' ? 'ru' : 'en';
+      setLanguage(newLang);
+      langSwitcher.dataset.lang = newLang;
+      langSwitcher.classList.toggle('fa-toggle-on');
+      langSwitcher.classList.toggle('fa-toggle-off');
+    });
+  }
+  // Initialize language
+  const savedLang = localStorage.getItem('lang') || 'en';
+  setLanguage(savedLang);
+});
