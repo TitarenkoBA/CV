@@ -13,7 +13,8 @@
 <body class="w3-dark-grey">
 
   <header class="w3-container w3-deep-orange w3-center w3-margin-bottom w3-card">
-    <p><a href="https://github.com/TitarenkoBA/" target="_blank">Find me on github <i class="fa fa-github w3-hover-opacity"></i></a></p>
+    <p><a href="https://github.com/TitarenkoBA" target="_blank" class="w3-hover-opacity">Find me on github <i class="fa fa-github"></i></a></p>
+    <i id="theme-toggle" class="fa fa-toggle-on w3-display-topright" aria-hidden="true"></i>
   </header>
 
   <!-- Page Container -->
@@ -29,14 +30,18 @@
           <div class="w3-display-container">
             <img class="w3-hover-opacity" src="img/5.JPG" style="width:100%" alt="Avatar" onclick="document.getElementById('id02').style.display='block'">
 
-            <div id="id02" class="w3-modal">
+            <div id="id02" class="w3-modal w3-animate-opacity">
               <div class="w3-modal-content">
                 <div >
-                  <span onclick="document.getElementById('id02').style.display='none'"
-                  class="w3-button w3-display-topright w3-xlarge w3-text-white">&times;</span>
-                  <img class="mySlides" src="img/2.JPG">
-                  <img class="mySlides" src="img/3.JPG">
-                  <img class="mySlides" src="img/5.JPG">
+                  <span 
+                    onclick="document.getElementById('id02').style.display='none'"
+                    class="w3-button w3-display-topright w3-xlarge w3-text-white"
+                  >
+                    &times;
+                  </span>
+                  <img class="mySlides w3-animate-opacity" src="img/2.JPG">
+                  <img class="mySlides w3-animate-opacity" src="img/3.JPG">
+                  <img class="mySlides w3-animate-opacity" src="img/5.JPG">
                   <button class="w3-button w3-xxlarge w3-display-left w3-text-white" onclick="plusDivs(-1)">&#10094;</button>
                   <button class="w3-button w3-xxlarge w3-display-right w3-text-white" onclick="plusDivs(+1)">&#10095;</button>
                 </div>
@@ -64,9 +69,9 @@
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>90%</span></div>
             </div>
             <p>Examples: 
-              <a href="https://titarenkoba.github.io/html5-css3.git-project_2/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/test-task-2/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/html5-css3.git-project_4/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/html5-css3.git-project_2/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/test-task-2/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/html5-css3.git-project_4/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
             </p>
             <hr class="w3-card">
             <p>JavaScript</p>
@@ -78,9 +83,9 @@
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>60%</span></div>
             </div>
             <p>Examples: 
-              <a href="https://titarenkoba.github.io/JavaScript_level_1_lesson_8/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/AudioPleer/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/about_me_test/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/JavaScript_level_1_lesson_8/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/AudioPleer/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/about_me_test/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
             </p>
             <hr class="w3-card">
             <p>Vue.js, Vue Router, Vuex</p>
@@ -88,12 +93,12 @@
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>55%</span></div>
             </div>
             <p>Examples: 
-              <a href="https://titarenkoba.github.io/git-handbook/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/JavaScript_level_2_lesson_6/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/blog_preview/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/notes_preview/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/PhoneBook_preview/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
-              <a href="https://titarenkoba.github.io/chat_preview/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/git-handbook/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/JavaScript_level_2_lesson_6/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/blog_preview/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/notes_preview/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/PhoneBook_preview/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://titarenkoba.github.io/chat_preview/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
             </p>
             <hr class="w3-card">
             <p>React.js, React Router, Redux</p>
@@ -101,7 +106,7 @@
               <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>60%</span></div>
             </div>
             <p>Examples: 
-              <a href="https://react-quiz-ccba5.web.app/" target="_blank" class="w3-button w3-deep-orange w3-card w3-small">Click</a>
+              <a href="https://react-quiz-ccba5.web.app/" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Click</a>
             </p>
             <hr class="w3-card">
             <p>Git</p>
@@ -122,14 +127,22 @@
             </div>
             <br>
 
-            <button onclick="document.getElementById('id01').style.display='block'"
-            class="w3-button w3-block w3-deep-orange w3-card">Open stats</button>
+            <button 
+              onclick="document.getElementById('id01').style.display='block'"
+              class="w3-button w3-block w3-margin-bottom w3-deep-orange w3-card"
+            >
+              Open stats
+            </button>
 
-            <div id="id01" class="w3-modal">
+            <div id="id01" class="w3-modal w3-animate-opacity">
               <div class="w3-modal-content">
                 <div class="w3-container">
-                  <span onclick="document.getElementById('id01').style.display='none'"
-                  class="w3-button w3-display-topright w3-large">&times;</span>
+                  <span 
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright w3-large w3-hover-opacity"
+                  >
+                    &times;
+                  </span>
                   <canvas id="myChart"></canvas>
                 </div>
               </div>
@@ -168,9 +181,16 @@
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-orange"></i>Work Experience</h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Web developer / Makves Group / www.makves.ru</b></h5>
-            <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2021 - <span class="w3-tag w3-deep-orange w3-round">Current</span></h6>
-            <p>Creating UI</p>
+            <h5 class="w3-opacity"><b>Senior web developer / Makves Group / www.makves.ru</b></h5>
+            <h6 class="w3-text-deep-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2021 - Jul 2025</h6>
+            <p>
+              Software development, web resource development, software interface development, web resource optimization and layout, 
+              ensuring cross-platform, cross-browser, and responsive behavior of web resource elements, checking the functionality 
+              and compliance of the web resource with its intended purpose, administering, maintaining, and upgrading the web resource, 
+              monitoring the work of web programmers and junior web programmers.
+            </p>
+            <a href="pdf\recommendations.pdf" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Recommendations</a>
+            <a href="video\preview.mp4" target="_blank" class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small">Preview</a>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
@@ -285,11 +305,18 @@
   </div>
 
   <footer class="w3-container w3-deep-orange w3-center w3-margin-top w3-card">
-    <p><a href="https://github.com/TitarenkoBA/" target="_blank">Find me on github <i class="fa fa-github w3-hover-opacity"></i></a></p>
+    <p><a href="https://github.com/TitarenkoBA" target="_blank" class="w3-hover-opacity">Find me on github <i class="fa fa-github w3-hover-opacity"></i></a></p>
   </footer>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.themeToggleInit) return;
+    window.themeToggleInit = true;
+    if (typeof themeToggle === 'function') themeToggle();
+  });
+</script>
 
 </body>
 </html>

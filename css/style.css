@@ -3,16 +3,20 @@ html,body,h1,h2,h3,h4,h5,h6 {
 }
 
 .myBar {
-  transition: all 2s;
+	transition: all 2s;
+}
+
+.w3-button, .w3-hoverable *, .w3-hover-opacity {
+	transition: all 300ms;
 }
 
 .myBar span {
-  opacity: 0;
-  transition: all 2s;
+	opacity: 0;
+	transition: all 2s;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 img {
@@ -26,4 +30,10 @@ img {
 .inset-shadow {
 	box-shadow: inset 4px 4px 4px rgba(50, 50, 50, 0.5);
 	-webkit-box-shadow: inset 4px 4px 4px rgba(50, 50, 50, 0.5);
+}
+
+#theme-toggle {
+	margin-top: 20px;
+	margin-right: 20px;
+	cursor: pointer;
 }
