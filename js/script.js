@@ -78,7 +78,7 @@ function themeToggle() {
   if (!btn) return;
 
   const toggleClasses = (selector, classA, classB) => {
-    document.querySelectorAll(selector).forEach(elem => {
+    document.querySelectorAll(selector).forEach((elem) => {
       elem.classList.toggle(classA);
       elem.classList.toggle(classB);
     });
@@ -89,7 +89,11 @@ function themeToggle() {
 
     if (isDeepOrange) {
       toggleClasses(".w3-deep-orange", "w3-deep-orange", "w3-teal");
-      toggleClasses(".w3-text-deep-orange", "w3-text-deep-orange", "w3-text-teal");
+      toggleClasses(
+        ".w3-text-deep-orange",
+        "w3-text-deep-orange",
+        "w3-text-teal"
+      );
     } else {
       toggleClasses(".w3-teal", "w3-deep-orange", "w3-teal");
       toggleClasses(".w3-text-teal", "w3-text-deep-orange", "w3-text-teal");
