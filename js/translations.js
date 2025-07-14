@@ -3,7 +3,7 @@
 window.translations = {
     en: {
         findMeOnGithub: "Find me on github",
-        frontEndDeveloper: "Front End Developer",
+        webDeveloper: "Web-developer",
         location: "Syktyvkar, Russia",
         skills: "Skills",
         html: "HTML",
@@ -88,7 +88,7 @@ window.translations = {
     },
     ru: {
         findMeOnGithub: "Найти меня на github",
-        frontEndDeveloper: "Фронтенд разработчик",
+        webDeveloper: "Веб-разработчик",
         location: "Сыктывкар, Россия",
         skills: "Навыки",
         html: "HTML",

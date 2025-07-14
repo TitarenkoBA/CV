@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 
 <body class="w3-dark-grey">
@@ -41,7 +46,7 @@
 
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
-            <img class="w3-hover-opacity" src="img/5.JPG" style="width:100%" alt="Avatar"
+            <img class="w3-hover-opacity" src="img/5.JPG" style="width: 100%; cursor: pointer;" alt="Avatar"
               onclick="document.getElementById('id02').style.display='block'">
 
             <div id="id02" class="w3-modal w3-animate-opacity">
@@ -68,7 +73,7 @@
           </div>
           <div class="w3-container">
             <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><span
-                data-i18n="frontEndDeveloper">Front End Developer</span></p>
+                data-i18n="webDeveloper">Web-developer</span></p>
             <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><span
                 data-i18n="location">Syktyvkar, Russia</span></p>
             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-orange"></i><a
@@ -101,7 +106,7 @@
             <hr class="w3-card">
             <p data-i18n="javascript">JavaScript</p>
             <div class="w3-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>80%</span>
+              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>90%</span>
               </div>
             </div>
             <p data-i18n="jquery">jQuery</p>
@@ -140,7 +145,7 @@
             <hr class="w3-card">
             <p data-i18n="react">React.js, React Router, Redux</p>
             <div class="w3-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>60%</span>
+              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>80%</span>
               </div>
             </div>
             <p data-i18n="examples">Examples:
@@ -150,12 +155,12 @@
             <hr class="w3-card">
             <p data-i18n="git">Git</p>
             <div class="w3-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>40%</span>
+              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>50%</span>
               </div>
             </div>
             <p data-i18n="typescript">TypeScript</p>
             <div class="w3-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>20%</span>
+              <div class="w3-container w3-center w3-round-xlarge w3-deep-orange myBar" style="width:0%"><span>40%</span>
               </div>
             </div>
             <p data-i18n="php">PHP</p>
@@ -238,11 +243,41 @@
               the web resource,
               monitoring the work of web programmers and junior web programmers.
             </p>
-            <a href="pdf\recommendations.pdf" target="_blank"
-              class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small"
-              data-i18n="recommendations">Recommendations</a>
-            <a href="video\preview.mp4" target="_blank"
-              class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="preview">Preview</a>
+            <button class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="recommendations"
+              onclick="document.getElementById('id03').style.display='block'">
+              Recommendations
+            </button>
+            <div id="id03" class="w3-modal w3-animate-opacity">
+              <div class="w3-modal-content">
+                <div>
+                  <span onclick="document.getElementById('id03').style.display='none'"
+                    class="w3-button w3-display-topright w3-xlarge w3-text-white">
+                    &times;
+                  </span>
+                  <img class="w3-animate-opacity" src="img/recommendations.jpg" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <button class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="preview"
+              onclick="document.getElementById('id04').style.display='block'">
+              Preview
+            </button>
+            <div id="id04" class="w3-modal w3-animate-opacity">
+              <div class="w3-modal-content">
+                <div style="height: 100px;">
+                  <span onclick="document.getElementById('id04').style.display='none'"
+                    class="w3-button w3-display-topright w3-xlarge w3-text-white" style="z-index: 1000;">
+                    &times;
+                  </span>
+                  <video class="w3-animate-opacity" style="width: 100%;" controls tabindex="0">
+                    <source src="video/preview.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    Video tag not supported. Download the video
+                    <a href="video\preview.mp4" target="_blank"
+                      class="w3-button w3-margin-bottom w3-deep-orange w3-card w3-small" data-i18n="preview">Preview</a>
+                  </video>
+                </div>
+              </div>
+            </div>
             <hr class="w3-card">
           </div>
           <div class="w3-container">
