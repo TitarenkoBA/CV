@@ -33,22 +33,22 @@ function showDivs(n) {
 
 const ctx = document.getElementById("myChart").getContext("2d");
 const myChart = new Chart(ctx, {
-  type: "radar",
+  type: "bar",
   data: {
     labels: [
       "English / HTML",
       "Russian / CSS",
       "Responsibility, perseverance, independence, organization / Javascript",
-      "Organizational skills, leadership skills / jQuery",
-      "Politeness, competent writing, correct speech / Vue.js",
+      "Organizational skills, leadership skills / Vue.js",
+      "Politeness, competent writing, correct speech / React.js",
       "Striving to acquire new knowledge and practical skills / Git",
-      "Creativity, originality / PHP",
+      "Creativity, originality / PHP, Python, Go",
     ],
     datasets: [
       {
         label: "Soft skills",
         fill: true,
-        backgroundColor: "rgba(97, 97, 97, 0.3)",
+        backgroundColor: "rgba(97, 97, 97)",
         borderColor: "rgba(97, 97, 97, 1)",
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(97, 97, 97, 1)",
@@ -57,11 +57,11 @@ const myChart = new Chart(ctx, {
       {
         label: "Hard skills",
         fill: true,
-        backgroundColor: "rgba(255, 87, 34, 0.3)",
+        backgroundColor: "rgba(255, 87, 34)",
         borderColor: "rgba(255, 87, 34, 1)",
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255, 87, 34, 1)",
-        data: [90, 90, 80, 60, 40, 40, 15],
+        data: [90, 90, 90, 55, 80, 50, 15],
       },
     ],
   },
